@@ -46,7 +46,7 @@
               <a class="nav-link" href="{{ route('about-us') }}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="doctors.html">Doctors</a>
+              <a class="nav-link" href="{{ route('doctors.list') }}">Doctors</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="blog.html">News</a>
@@ -55,7 +55,8 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              @if(Auth::check())
+
+            @if(Auth::check())
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
             <button type="submit" class="btn btn-primary ml-lg-3">Logout</button>
@@ -63,6 +64,14 @@
             @else
                 <a class="btn btn-primary ml-lg-3" href="{{ route('login') }}">Login</a>
                 <a class="btn btn-primary ml-lg-3" href="{{ route('register') }}">Register</a>
+            @endif
+
+             {{-- Admin Button (only admin can see) --}}
+           @if(Auth::check() && Auth::user()->role === 'admin')
+
+                <li class="nav-item">
+                    <a class="btn btn-warning ml-lg-3" href="{{ route('admin.dashboard') }}">Admin</a>
+                </li>
             @endif
 
 

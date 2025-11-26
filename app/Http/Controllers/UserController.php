@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
-
+use App\Models\Doctor;
 class UserController extends Controller
 {
     public function dashboard(){
@@ -19,10 +19,28 @@ class UserController extends Controller
         }
     }
 
-    public function home(){
-        return view('main');
+   public function home(){
+       
+        
+    $doctors = Doctor::latest()->get();
+    return view('main', compact('doctors'));
+    }
+
+    public function DoctorIndex(){
+         // Fetch the data needed for the entire homepage
+        $doctors = Doctor::latest()->get();
+        return view('pages.doctor-index',compact('doctors'));
+    }
+    public function doctorShow(Doctor $doctor){
+        return view('pages.doctor-show',compact('doctor'));
     }
     public function aboutUs(){
         return view('pages.about-us');
     }
+
+    public function doctorList(){
+        $doctors = Doctor::latest()->paginate(10);
+        return view('pages.doctor-list',compact('doctors'));
+    }
+   
 }
