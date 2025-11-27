@@ -84,3 +84,63 @@ php artisan serve
 
 
 The application will be accessible at http://127.0.0.1:8000 (or similar).
+
+User Interface:
+
+Home page:
+<img width="1366" height="3592" alt="Home Page" src="https://github.com/user-attachments/assets/8cb598df-ce8a-40bc-be05-a0780c3d1796" />
+
+Doctors:
+<img width="1366" height="651" alt="doctorsPage" src="https://github.com/user-attachments/assets/e0c3579e-f481-4694-80c0-4712c09357c0" />
+
+<img width="1366" height="694" alt="doctors Details" src="https://github.com/user-attachments/assets/4a97f155-d579-476a-b2a0-b888e98e6e66" />
+
+Appointment Section:
+
+<img width="1345" height="606" alt="AppointmentSection" src="https://github.com/user-attachments/assets/ce5f3082-9a82-4fbf-9083-02c550e81dcc" />
+
+<img width="1137" height="87" alt="stored" src="https://github.com/user-attachments/assets/ae47883f-d890-4726-96e6-47e3b03fbc6c" />
+
+
+
+Admin Interface:
+
+Home Page:
+
+<img width="1366" height="3909" alt="admin inter face of the page" src="https://github.com/user-attachments/assets/9c4d883c-9481-4a47-8fa0-8842dfab26aa" />
+
+Without Admin can't access Dashboard:
+
+<img width="1366" height="651" alt="without admin cant access dashboard" src="https://github.com/user-attachments/assets/99b60d7c-ca2e-454f-a045-261ee3836a32" />
+
+Admin Section:
+
+Admin Dashboard:
+
+<img width="1366" height="812" alt="admin-dashboard" src="https://github.com/user-attachments/assets/ae97d4cc-93d9-4b87-8ad2-2e95404eac1a" />
+
+Doctors Details section from admin side:
+
+<img width="1366" height="691" alt="doctors detail section from admin view" src="https://github.com/user-attachments/assets/48909943-22a8-42ab-9bd4-6c6180f8e3be" />
+
+Only admin can UPDATE ADD AND DLETE:
+
+<img width="1366" height="651" alt="onlyadmin can add delete and edit doctors information" src="https://github.com/user-attachments/assets/1adc6c35-a60b-48e8-9311-ddd574d4ffea" />
+
+
+<img width="1366" height="651" alt="update SEction" src="https://github.com/user-attachments/assets/39613713-3f28-4578-b240-f6f2ab25bbad" />
+
+
+SideBars:
+
+<img width="273" height="516" alt="sidebars" src="https://github.com/user-attachments/assets/9744629a-1a6e-49f7-a884-6b0f8b0af0c1" />
+
+Admin appointment section:
+
+<img width="1366" height="989" alt="appointment req notification form user" src="https://github.com/user-attachments/assets/f22064e2-d17d-454e-a7cf-151cdcfa4815" />
+
+Approve/Cancel:
+<img width="1366" height="659" alt="approvesection" src="https://github.com/user-attachments/assets/644ea5ad-4b4f-4bd3-a2fa-c2396dc61cb9" />
+
+
+
