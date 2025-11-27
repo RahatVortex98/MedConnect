@@ -25,6 +25,8 @@ Route::middleware(['auth','verified'])->group(function () {
         
 });
 
+        Route::post('/appointments',[UserController::class,'Appointment'])
+        ->name('appointments');
 
 
 Route::middleware(['auth','admin'])->group(function () {
@@ -48,6 +50,16 @@ Route::middleware(['auth','admin'])->group(function () {
     
     Route::get('/doctor/{doctor}',[AdminController::class,'adminShowDoctor'])
     ->name('admin.show.doctor');
+
+    Route::get('/appointment/request',[AdminController::class,'viewRequest'])
+    ->name('admin.appointment.request');
+
+    Route::get('/appointment/approve/{appointment}', [AdminController::class, 'approve'])
+        ->name('admin.appointment.approve');
+        
+    
+    Route::get('/appointment/cancel/{appointment}', [AdminController::class, 'cancel'])
+        ->name('admin.appointment.cancel');
 });
 
 

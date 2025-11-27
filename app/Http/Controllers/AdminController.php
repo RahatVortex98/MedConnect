@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Appointment;
 use Illuminate\Http\Request;
 use App\Models\Doctor;
 use Illuminate\Support\Facades\File; // Import File facade for deleting files
@@ -118,5 +119,20 @@ public function adminDoctorUpdate(Request $request, Doctor $doctor)
     // 4. Redirect
     return redirect()->route('admin.dashboard')->with('success', 'Doctor updated successfully!');
 }
+
+    public function viewRequest(){
+        $appointments=Appointment::latest()->get();
+        return view('admin.admin-appointments-list',compact('appointments'));
+    }
+
+    public function approve(Appointment $appointment){
+        $appointment->update(['status'=>'approved']);
+        return back()->with('success', 'Appointment approved successfully!');
+    }
+    public function cancel(Appointment $appointment){
+        $appointment->update(['status'=>'canceled']);
+        return back()->with('success', 'Appointment canceled');
+    }
+    
    
 }
