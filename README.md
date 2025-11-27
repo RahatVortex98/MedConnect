@@ -1,4 +1,4 @@
-One-Health Appointment & Consultation Platform
+MedConnect Appointment & Consultation Platform
 
 🌟 Project Overview
 
@@ -81,6 +81,11 @@ Compile Assets and Run:
 
 npm run dev  # or npm run watch
 php artisan serve
+
+<img width="695" height="211" alt="Capture1" src="https://github.com/user-attachments/assets/3cd1f463-f2a7-41a4-826a-f70496a956bd" />
+
+<img width="693" height="306" alt="Capture2" src="https://github.com/user-attachments/assets/77ffe8e5-826b-4d2f-acd9-330de4cf1ec5" />
+
 
 
 The application will be accessible at http://127.0.0.1:8000 (or similar).
